@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Royal Nikah Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Cinzel,serif;
+background:radial-gradient(circle,#8d6a3b,#4b2f1c 70%);
+overflow:hidden;
+color:#4a2d16;
+}
+body:before{
+content:"";
+position:fixed;inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(255,215,120,.18),transparent 30%),
+radial-gradient(circle at 80% 80%,rgba(255,215,120,.12),transparent 35%);
+pointer-events:none;
+}
+.page{position:absolute;inset:0;display:none;justify-content:center;align-items:center;padding:20px}
+.active{display:flex;animation:fade 1.2s}
+.card{
+width:min(96vw,980px);
+background:
+linear-gradient(rgba(252,246,228,.97),rgba(245,233,205,.97));
+border:14px double #b38a3d;
+border-radius:26px;
+padding:50px;
+position:relative;
+box-shadow:0 0 70px rgba(0,0,0,.55), inset 0 0 30px rgba(201,162,76,.35);
+overflow:hidden;
+text-align:center;
+}
+.card:before,.card:after{
+content:"❦";
+position:absolute;
+font-size:90px;
+color:rgba(179,138,61,.35);
+}
+.card:before{top:10px;left:20px}
+.card:after{bottom:10px;right:20px;transform:rotate(180deg)}
+.frame{position:absolute;inset:14px;border:2px solid rgba(179,138,61,.45);border-radius:18px;pointer-events:none}
+.gold{color:#8b5a2b}
+h1{font-family:"Great Vibes",cursive;font-size:64px;color:#8b5a2b}
+h2{font-size:30px;margin:15px 0}
+.names{font-size:40px;font-weight:bold}
+.ar{font-family:Amiri,serif;font-size:40px;line-height:1.8}
+.quote,.details{font-size:21px;line-height:1.8}
+.heart{font-size:90px;color:#b22222;animation:pulse 1.2s infinite}
+.progress{width:80%;height:10px;border:1px solid #a57a2f;border-radius:20px;margin:18px auto;overflow:hidden}
+.bar{height:100%;width:0;background:#c9a24c;animation:fill 5s linear forwards}
+.btn{display:inline-block;margin-top:18px;padding:12px 24px;border-radius:30px;background:#8b5a2b;color:#fff;text-decoration:none}
+.petal{position:fixed;top:-40px;font-size:22px;animation:fall linear infinite;opacity:.8}
+@keyframes fill{to{width:100%}}
+@keyframes pulse{50%{transform:scale(1.15)}}
+@keyframes fade{from{opacity:0;transform:scale(.98)}to{opacity:1;transform:scale(1)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@media(max-width:768px){
+body{overflow:auto}
+.page{align-items:flex-start;padding:10px}
+.card{padding:28px;width:100%}
+h1{font-size:42px}
+h2{font-size:23px}
+.names{font-size:28px}
+.ar{font-size:30px}
+.quote,.details{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<div class="page active" id="p0"><div class="card"><div class="frame"></div>
+<div class="heart">❤</div>
+<h2>Connecting Two Hearts Into One</h2>
+<div class="progress"><div class="bar"></div></div>
+<p class="quote">A journey written by Allah before time began.</p>
+</div></div>
+
+<div class="page" id="p1"><div class="card"><div class="frame"></div>
+<h2>The Prophet Muhammad ﷺ said</h2>
+<div class="ar">لَمْ نَرَ لِلْمُتَحَابَّيْنِ مِثْلَ النِّكَاحِ</div>
+<p class="quote"><i>“There is nothing like marriage, for the two who love one another.”</i><br>(Sunan Ibn Majah)</p>
+</div></div>
+
+<div class="page" id="p2"><div class="card"><div class="frame"></div>
+<h2>The Prophet Muhammad ﷺ said</h2>
+<div class="ar">النِّكَاحُ مِنْ سُنَّتِي فَمَنْ لَمْ يَعْمَلْ بِسُنَّتِي فَلَيْسَ مِنِّي وَتَزَوَّجُوا فَإِنِّي مُكَاثِرٌ بِكُمُ الأُمَمَ</div>
+<p class="quote"><i>Marriage is part of my Sunnah... Get married, for I am heartened by your great numbers.</i><br>(Sunan Ibn Majah)</p>
+</div></div>
+
+<div class="page" id="p3"><div class="card"><div class="frame"></div>
+<div class="ar">هُنَّ لِبَاسٌ لَّكُمْ وَأَنْتُمْ لِبَاسٌ لَهُنَّ</div>
+<p class="quote"><i>“Your spouses are a garment for you as you are for them.”</i><br>Surah Al‑Baqarah (2:187)</p>
+</div></div>
+
+<div class="page" id="p4"><div class="card"><div class="frame"></div>
+<div class="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+<h2>وَخَلَقْنَاكُمْ أَزْوَاجًا</h2>
+<p class="quote"><i>“And We created you in pairs.”</i><br>Surah An‑Naba (78:8)</p>
+<h1>The Nikah Ceremony</h1>
+<div class="names">Md. Mahmudul Hasan Hridoy</div>
+<h1>&</h1>
+<div class="names">Marjia Akter Dola</div>
+<div class="details">
+<b>24 July • 7:00 PM</b><br><br>
+Bilash Bhaban Community Center<br>Mirpur‑10, Dhaka
+</div>
+<a class="btn" href="https://www.google.com/maps/search/Bilash+Bhaban+Community+Center+Mirpur+10+Dhaka" target="_blank">View Google Maps</a>
+<hr style="margin:26px 0;border:none;border-top:1px solid #d2b06a">
+<p class="quote">
+<b>With hearts full of gratitude to Allah,</b><br><br>
+Some meetings are written in the heavens long before they are witnessed on earth.
+As two souls begin a journey of faith, mercy, and lifelong companionship, your presence and heartfelt prayers will be among the most precious gifts we receive.
+<br><br>
+<b>We warmly invite you to celebrate this blessed union and share in our joy.</b>
+</p>
+</div></div>
+
+<script>
+for(let i=0;i<35;i++){
+ let e=document.createElement("div");
+ e.className="petal";
+ e.innerHTML=["❀","✿","❁","❃"][Math.floor(Math.random()*4)];
+ e.style.left=Math.random()*100+"vw";
+ e.style.animationDuration=(7+Math.random()*8)+"s";
+ e.style.animationDelay=(-Math.random()*10)+"s";
+ document.body.appendChild(e);
+}
+const ids=["p0","p1","p2","p3","p4"];
+function show(n){ids.forEach(id=>document.getElementById(id).classList.remove("active"));document.getElementById(ids[n]).classList.add("active")}
+setTimeout(()=>show(1),5000);
+setTimeout(()=>show(2),10000);
+setTimeout(()=>show(3),15000);
+setTimeout(()=>show(4),20000);
+</script>
+</body>
+</html>
