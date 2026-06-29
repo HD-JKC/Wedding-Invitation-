@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nikah Invitation</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;font-family:Georgia,serif;background:#efe2c1;color:#4b3526}
+body{background:linear-gradient(rgba(255,248,235,.92),rgba(255,248,235,.92)),repeating-linear-gradient(45deg,#e9d7b2,#e9d7b2 12px,#eadfc4 12px,#eadfc4 24px)}
+.page{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;opacity:0;transition:opacity 1s;padding:20px}
+.show{opacity:1}
+.card{max-width:900px;width:100%;background:#fffaf0;border:8px solid #b58a3c;border-radius:18px;padding:35px;box-shadow:0 0 30px rgba(0,0,0,.2);text-align:center}
+h1,h2,h3{color:#8b5a2b}
+.ar{font-size:34px;line-height:1.8}
+.quote{font-size:22px}
+.heart{font-size:90px;animation:pulse 1s infinite;color:#b22222}
+@keyframes pulse{50%{transform:scale(1.25)}}
+.loader{width:280px;height:6px;background:#d6c5a4;border-radius:5px;overflow:hidden;margin:20px auto}
+.bar{height:100%;width:0;background:#b58a3c;animation:load 5s linear forwards}
+@keyframes load{to{width:100%}}
+a.btn{display:inline-block;margin-top:18px;padding:12px 22px;background:#8b5a2b;color:#fff;text-decoration:none;border-radius:30px}
+.small{font-style:italic}
+</style>
+</head>
+<body>
+
+<div class="page show" id="p0">
+<div class="card">
+<div class="heart">❤</div>
+<h2>Connecting Two Hearts Into One</h2>
+<div class="loader"><div class="bar"></div></div>
+<p>Please wait...</p>
+</div></div>
+
+<div class="page" id="p1"><div class="card">
+<h2>Prophet Muhammad ﷺ said</h2>
+<p class="ar">لَمْ نَرَ لِلْمُتَحَابَّيْنِ مِثْلَ النِّكَاحِ</p>
+<p class="quote"><em>"There is nothing like marriage, for the two who love one another."</em></p>
+<p class="small">(Sunan Ibn Majah)</p>
+</div></div>
+
+<div class="page" id="p2"><div class="card">
+<h2>Prophet Muhammad ﷺ said</h2>
+<p class="ar">النِّكَاحُ مِنْ سُنَّتِي فَمَنْ لَمْ يَعْمَلْ بِسُنَّتِي فَلَيْسَ مِنِّي وَتَزَوَّجُوا فَإِنِّي مُكَاثِرٌ بِكُمُ الأُمَمَ</p>
+<p class="quote"><em>“Marriage is part of my Sunnah, and whoever does not follow my Sunnah has nothing to do with me. Get married, for I am heartened by your great numbers before the nations.”</em></p>
+<p class="small">(Sunan Ibn Majah)</p>
+</div></div>
+
+<div class="page" id="p3"><div class="card">
+<h2>Holy Qur'an</h2>
+<p class="ar">هُنَّ لِبَاسٌ لَكُمْ وَأَنْتُمْ لِبَاسٌ لَهُنَّ</p>
+<p class="quote"><em>“Your spouses are a garment for you as you are for them.”</em></p>
+<p class="small">Surah Al-Baqarah (2:187)</p>
+</div></div>
+
+<div class="page" id="p4"><div class="card">
+<p class="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+<h2>وَخَلَقْنَاكُمْ أَزْوَاجًا</h2>
+<p><em>“And We created you in pairs.”</em></p>
+<p>Surah An-Naba (78:8)</p>
+<hr>
+<h1>The Nikah Ceremony</h1>
+<h2>Md. Mahmudul Hasan Hridoy</h2>
+<h3>&amp;</h3>
+<h2>Marjia Akter Dola</h2>
+<p><strong>Date:</strong> 24 July</p>
+<p><strong>Time:</strong> 7:00 PM</p>
+<p><strong>Venue:</strong><br>Bilash Bhaban Community Center<br>Mirpur-10, Dhaka</p>
+<a class="btn" href="https://www.google.com/maps/search/Bilash+Bhaban+Community+Center+Mirpur+10+Dhaka" target="_blank">View on Google Maps</a>
+<p style="margin-top:30px">We request the honor of your presence and blessings on this joyous occasion.</p>
+</div></div>
+
+<script>
+const pages=[...document.querySelectorAll('.page')];
+let i=0;
+function next(){
+ pages[i].classList.remove('show');
+ i++;
+ if(i<pages.length) pages[i].classList.add('show');
+}
+setTimeout(next,5000);
+setTimeout(next,10000);
+setTimeout(next,15000);
+setTimeout(next,20000);
+</script>
+</body>
+</html>
